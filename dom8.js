@@ -48,6 +48,21 @@ function removeItem(e){
     }
   }
 }
+Object.keys(localStorage).forEach((key) => {
+
+
+
+stringifiedDetailsOfPeople = localStorage.getItem(key);
+
+detailsOfPeople = JSON.parse(stringifiedDetailsOfPeople);
+
+
+
+addNewLineElement(detailsOfPeople);
+
+});
+
+
 
 // Filter Items
 function filterItems(e){
